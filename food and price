@@ -1,0 +1,49 @@
+#include <stdio.h>
+int main()
+{
+ int a,qty,price,total;
+ printf("\nMENU CARD \nSelect your food \n1.PIZZA \n2.BURGER \n3.PASTA \n4.FRENCH FRIES \n5.SANDWICH\n");
+ scanf("%d",&a);
+ switch(a)
+ {
+  case 1:
+    printf("\nYou have selected PIZZA.\n Enter the quantity :");
+    scanf("%d",&qty);
+    price=239;
+    total=qty*price;
+    printf("\nTotal amount :%d",total);
+    break;
+  case 2:
+    printf("\nYou have selected BURGER.\n Enter the quantity :");
+    scanf("%d",&qty);
+    price=129;
+    total=qty*price;
+    printf("\nTotal amount :%d",total);
+    break;
+  case 3:
+    printf("\nYou have selected PASTA.\n Enter the quantity :");
+    scanf("%d",&qty);
+    price=179;
+    total=qty*price;
+    printf("\nTotal amount :%d",total);
+    break;
+  case 4:
+    printf("\nYou have selected FRENCH FRIES.\n Enter the quantity :");
+    scanf("%d",&qty);
+    price=99;
+    total=qty*price;
+    printf("\nTotal amount :%d",total);
+    break;
+  case 5:
+    printf("\nYou have selected SANDWICH.\n Enter the quantity :");
+    scanf("%d",&qty);
+    price=149;
+    total=qty*price;
+    printf("\nTotal amount :%d",total);
+    break;
+  default:
+    printf("\nSorry Unavailable...%ds",a);
+    break;
+ }
+return 0;
+}
